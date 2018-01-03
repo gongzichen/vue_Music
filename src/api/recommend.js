@@ -3,14 +3,20 @@ import {commonParams, options} from './config'
 import axios from 'axios'
 
 export function getRecommend () {
-  const url = 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg'
-
-  const data = Object.assign({}, commonParams, {
-    platform: 'h5',
-    uin: 0,
-    needNewCode: 1
+  // const url = 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg'
+  const url = 'https://cl.csair.com/travelbiz/loginQy/loginByMobilePwd'
+  // const data = Object.assign({}, commonParams, {
+    // platform: 'h5',
+    // uin: 0,
+    // needNewCode: 1
+  //   orderno: 'B1712130000010'
+  // })
+  const data = Object.assign({}, {
+    mobile: '15360654422',
+    password: 'cl123@pw',
+    mobileFlag: ''
+    // orderno: 'B1712130000010'
   })
-
   return jsonp(url, data, options)
 }
 

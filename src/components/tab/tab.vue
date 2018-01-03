@@ -14,9 +14,11 @@
       </router-link>
   </div>
 </template>
+
 <script type='text/ecmajavascript'>
   export default {}
 </script>
+
 <style scope lang="scss">
   @import '~common/scss/variable';
   .tab {

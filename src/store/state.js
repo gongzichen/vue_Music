@@ -3,7 +3,8 @@
 
 const state = {
   singer: {},
-  playing: false
+  playing: false,
+  topList: {}
 }
 
 export default state

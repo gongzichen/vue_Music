@@ -9,19 +9,19 @@
     <!-- <player></player> -->
   </div>
 </template>
-<script type='text/ecmajavascript'>
+<script type="text/ecmascript-6">
   import MHeader from 'components/m-header/m-header'
   // import Player from 'components/player/player'
   import Tab from 'components/tab/tab'
-  import Play from 'components/player/player'
   
   export default{
     components: {
       MHeader,
       Tab
+      // Player
     }
   }
 </script>
 
-<style scoped lang="sass">
+<style scoped lang="scss">
 </style>

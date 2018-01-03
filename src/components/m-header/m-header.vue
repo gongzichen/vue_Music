@@ -1,7 +1,7 @@
 <template>
   <div class='m-header'>
       <div class='icon'></div>
-      <h1 class="text">GZC Music</h1>
+      <h1 class="text">gggg Music</h1>
       <!-- 个人中心/登入 -->
       <router-link tag='div' class='mine' to='/user'>
         <i class='icon-mine'></i>
@@ -30,6 +30,7 @@
             height: 32px;
             margin-right: 9px;
             @include bg-image('logo');
+            border-radius: 50%;
             background-size: 30px 32px !important;
         }
         .text {

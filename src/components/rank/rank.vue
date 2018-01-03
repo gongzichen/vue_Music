@@ -28,12 +28,13 @@
   import {ERR_OK} from 'api/config'
   import {playlistMixin} from 'common/js/mixin'
   import {mapMutations} from 'vuex'
+
     export default {
 			components: {
       	Scroll,
       	Loading
     	},
-		// 	mixins: [playlistMixin],
+			mixins: [playlistMixin],
     	created() {
       	this._getTopList()
     	},
@@ -49,8 +50,10 @@
 					this.$refs.toplist.refresh()
 				},
 				selectItem(item) {
+          console.log('rank.id')
+          console.log(item)
 					this.$router.push({
-						path: `rank${item.id}`
+						path: `/rank/${item.id}`
 					})
 					this.setTopList(item) // 通过vuex修toplist的值
 				},
